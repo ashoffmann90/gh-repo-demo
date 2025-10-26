@@ -9,13 +9,5 @@ export default defineConfig({
         plugins: [['babel-plugin-react-compiler']],
       },
     }),
-  ],
-      server: {
-        port: 3000,
-    },
-    build: {
-        outDir: './build',
-        assetsDir: './',
-    },
-    base: './',
+  ]
 })
