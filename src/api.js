@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://ec2-35-87-203-157.us-west-2.compute.amazonaws.com",
+  baseURL: "http://136.118.102.207",
   headers: {
     'Content-Type': 'application/json'
   }
@@ -9,7 +9,6 @@ const api = axios.create({
 
 const getRepos = async () => {
   const response = await api.get("/api/repos/initial");
-  console.log('response', response.data)
   return response.data;
 };
 
